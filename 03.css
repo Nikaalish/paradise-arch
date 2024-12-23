@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Tabrizi'; 
+    src: url('font/Tabrizi_Jali/Webfonts/TabriziJali-Regular_2023-03-19-222238_huqr.woff') format('woff2');
+    src: url('font/Tabrizi_Jali/Webfonts/TabriziJali-Regular_2023-03-19-222238_huqr.woff2') format('woff');
+    src: url('font/Tabrizi_Jali/OTF/TabriziJali-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BYekan";
+    src: url("font/BYekan/BYekan+.ttf") format('truetype');
+    src: url("font/BYekan/BYekan+B.ttf") format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Iran-sans";
+    src: url("font/Iran-sans/irsans.ttf") format("truetype");
+    src: url("font/Iran-sans/irsansb.ttf") format("truetype");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.image-container {
+    position: relative; 
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    background-color: rgb(78, 131, 188);
+    margin-top: 0;
+    position: fixed; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    direction: rtl;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none; 
+}
+
+.navbar ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none; 
+    padding: 15px;
+    display: block; 
+    font-family: BYekan !important; 
+    font-size: 18px !important;
+    color: white; 
+    position: relative; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute; 
+    width: 100%;
+    height: 2px; 
+    background-color: #002669;
+    bottom: 0;
+    left: 0; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+    
+}
+
+.navbar ul li a:hover {
+    color: #002669; 
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar.scrolled {
+    background-color: rgba(78, 131, 188, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.content {
+   padding-top: 70px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 15px;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    color: black !important; 
+    display: block;
+}
+
+.dropdown-content a:hover {
+   background-color: #dddddd;
+   border-radius: 15px;
+   /* backdrop-filter: blur(10px); */
+}
+
+.blur-container {
+   position: absolute;
+   top: 50%;
+   right: 10%; 
+   transform: translateY(-50%); 
+   background-color: rgba(255, 255, 255, 0.5); 
+   backdrop-filter: blur(1px);
+   padding: 20px;
+   border-radius: 10px; 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    font-family: BYekan;
+    font-size: 18px; 
+    color:#333;
+    text-align:center;
+    max-width: 400px;
+    max-height: 500px;
+    padding: 15px;
+}
+
