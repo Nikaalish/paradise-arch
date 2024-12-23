@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Tabrizi'; 
     src: url('font/Tabrizi_Jali/Webfonts/TabriziJali-Regular_2023-03-19-222238_huqr.woff') format('woff2');
     src: url('font/Tabrizi_Jali/Webfonts/TabriziJali-Regular_2023-03-19-222238_huqr.woff2') format('woff');
@@ -22,6 +22,22 @@
     font-weight: lighter;
     font-style: normal;
 }
+ */
+
+@font-face {
+    font-family: "BYekan";
+    src: url("https://raw.githubusercontent.com/Nikaalish/paradise-arch/7a0a16ebece2e8f1fcb6da83518be6e6317185a0/BYekan%2B.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BYekan";
+    src: url("https://raw.githubusercontent.com/Nikaalish/paradise-arch/7a0a16ebece2e8f1fcb6da83518be6e6317185a0/BYekan+B.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
